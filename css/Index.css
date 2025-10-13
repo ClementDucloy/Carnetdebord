@@ -1,269 +1,69 @@
- html, body {
-  overflow-x: hidden;
-  overflow-y: auto;
-} 
+.grand-bloc-degrade {
+    width: 80%; 
+    min-height: 250px; 
+    margin: 40px auto; 
+  
+    background: linear-gradient(to bottom right, #863008, #ca1901);
 
-
-
-
-.enctr {
-    color: rgb(5, 22, 75);
-    font-family: "Bitcount Prop Double Ink", system-ui;
-    font-size: 5em;
-    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
 }
 
-.img {
-  position: absolute;
-  text-align: center;
-  top: 250px;
-  left: 600px;
-  width: 500px;
-  height: auto;
-  border: 20px;
-}
-
-.bodi {
-    position: relative;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.menu {
-  text-align: center;       
-}
-
-.title {
-    display: inline-block; 
+.pres1 {
+    color: white; 
+    font-family: Dancing-Script;
     text-align: center; 
-    color: white;
-    font-size: 35px;
-    margin: 0 15px; 
-    padding: 15px 0;
-    transition: transform 0.3s ease;
-    text-decoration: none; 
-    font-family: "Dancing Script";
-}
-
-.title:hover {
-    transform: scale(1.05); 
+    font-size: 50px;
 
 }
 
-
-a.logo {
-  display: inline-block;
-  outline: none;
-  padding: 10px 15px;
+.pres1 p {
+    padding: 5px 0; 
+    margin: 0px 0;
+    line-height: 1.6;    
+    width: 50;
+    height: auto;
 }
 
-img.logo {
-  position: relative;
-  width: 50px;
-  height: auto;
-  bottom: 10px;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  vertical-align: middle;
-  border: none;
+.imgII {
+    display: block;
+    position: relative;
+    padding-left: 700px;
+	transition: transform 0.3s ease;
+
 }
 
-img.logo:hover {
-    transform: scale(1.05); 
-}
 
-a.logoo {
-  display: inline-block;
-  outline: none;
-  padding: 10px 15px;
-}
-
-img.logoo {
-  width: 100px;
-  height: auto;
-  top: 0px;
-  border-radius: 25px;
-  transition: transform 0.3s ease;
-  vertical-align: left;
-  border: none;
-}
-
-img.logoo:hover {
+.imgII:hover {
     transform: scale(1.05); 
 }
 
 
-.car {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;          
-  height: 75px;         
-  background: linear-gradient(90deg, #945002, #ff8801);
-  z-index: -1;
-}
-
-.index {
-  width: 0px;
-  height: 0px;
-}
-
-
-
-.pretext{ 
-  transition: transform 0.3s ease;  
-  display: block;
-  width: 1563px;
-  margin: 40px auto 0; 
-  text-align: center;
-  font-family: "Dancing Script";
-  font-size: 45px;
-  font-style: italic;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 10px;
-  padding-top: 10px;
-  background: linear-gradient(90deg, #383838, #494949);
-  overflow: hidden;
-}
-
-.pretext:hover {
-   transform: scale(1.02); 	
-}
-
-
-.backgroundI {
-  position: absolute;
-  top: 75px;
-  left: 0;
-  right: 0;
-  bottom: 0; 
-  background: linear-gradient(80deg, #218496, #002d70);
-  z-index: -1;
-}
-
-
-
-@keyframes slideshow__fade {
-  0% {
-    opacity: 0;
-    z-index: 2; 
-  }
+.grand-bloc-degrade2 {
+    width: 40%; 
+    min-height: 125px; 
+    margin: 20px auto; 
   
-  1.6666666667% { 
-    opacity: 1; 
-  }
-  
-  16.6666666667% { 
-    opacity: 1; 
-  }
-  
-  18.3333333333% { 
-    opacity: 0; 
-  }
-  
-  18.4% { 
-    z-index: 1; 
-  }
-  
-  100% {
-    opacity: 0; 
-  }
+    background: linear-gradient(to bottom right, #863008, #ca1901);
+
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
 }
 
-.diaporama {
-  position: relative;
-  border-radius: 15px;
-  width: 800px;
-  height: 600px; 
-  overflow: hidden; 
-  margin: 0px auto;
-}
-
-.diaporama img:not(:first-child) {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0 auto;
-  animation-duration: 30s; 
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-name: slideshow__fade;
-  animation-timing-function: ease-in;
-  transition: opacity 2s ease-in;
-}
-
-.diaporama img:nth-child(1) {
-  animation-delay: 0s;
-  opacity: 1; 
-  z-index: 3; 
-}
-.diaporama img:nth-child(2) { 
-  animation-delay: 15s; 
-}
-.diaporama img:nth-child(3) { 
-  animation-delay: 15s; 
-}
-
-
-.indexfin {
-  position: absolute;
-  top: 75px;
-  left: 0;
-  right: 0;
-  bottom: 0; 
-  background: linear-gradient(80deg, #218496, #002d70);
-  z-index: -1;
+.pres2 {
+    color: white; 
+    font-family: Dancing-Script;
+    text-align: center; 
+    font-size: 25px;
 
 }
 
-
-.indexf {
-    background: #868686;
-    width: 2000px;
-    color: rgb(255, 0, 191);
-    height: 75px;
-    margin: 75px auto 0; 
-    text-align: center;
-    font-family: "Dancing Script";
-    margin-right: 10px;
-    font-size: 35px;
-
-
-}
-
-.indexf a {
-  padding: 10px 15px;
-  text-decoration: none; 
-  font-style: italic, bold;
-
-}
-
-.nom {
-  display: block;
-  font-family: 'Playwrite DE SAS', sans-serif;
-  font-size: 30px;
-  margin: 250px auto; 
-  background-image: linear-gradient(to right, #FF512F, #DD2476); 
-  -webkit-background-clip: text;
-  background-clip: text; 
-  -webkit-text-fill-color: transparent;
- -webkit-text-fill-color: transparent;
-  color: transparent; 
-  font-weight: bold;
-  padding-right: 25px;
-}
-
-.classe {
-  position: relative;
-  bottom: 320px;
-  left: 1300px;
-  font-size: 20px;
-  font-family: 'Playwrite DE SAS', sans-serif;
-  color: #FF512F;
+.pres2 p {
+    padding: 5px 0; 
+    margin: 0px 0;
+    line-height: 1.6;    
+    width: 25;
+    height: auto;
 }
