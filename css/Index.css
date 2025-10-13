@@ -1,7 +1,15 @@
  html, body {
   overflow-x: hidden;
   overflow-y: auto;
+  text-align: center;
 } 
+
+ #container {
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    width: 900px;
+  }
 
 
 
@@ -270,4 +278,5 @@ img.logoo:hover {
  -webkit-text-fill-color: transparent;
   color: transparent; 
   font-weight: bold;
+
 }
