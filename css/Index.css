@@ -1,15 +1,8 @@
  html, body {
   overflow-x: hidden;
   overflow-y: auto;
-  text-align: center;
 } 
 
- #container {
-    text-align: left;
-    margin-right: auto;
-    margin-left: auto;
-    width: 900px;
-  }
 
 
 
@@ -235,7 +228,7 @@ img.logoo:hover {
     width: 2000px;
     color: rgb(255, 0, 191);
     height: 75px;
-    margin: 80px auto 0; 
+    margin: 75px auto 0; 
     text-align: center;
     font-family: "Dancing Script";
     margin-right: 10px;
@@ -254,7 +247,7 @@ img.logoo:hover {
 .nom {
   display: block;
   font-family: 'Playwrite DE SAS', sans-serif;
-  font-size: 60px;
+  font-size: 30px;
   margin: 250px auto; 
   background-image: linear-gradient(to right, #FF512F, #DD2476); 
   -webkit-background-clip: text;
@@ -263,20 +256,14 @@ img.logoo:hover {
  -webkit-text-fill-color: transparent;
   color: transparent; 
   font-weight: bold;
+  padding-right: 25px;
 }
 
 .classe {
-  display: block;
   position: relative;
-  bottom: 350px;
-  left: 1400px;
-  font-size: 40px;
+  bottom: 320px;
+  left: 1300px;
+  font-size: 20px;
   font-family: 'Playwrite DE SAS', sans-serif;
-  background-image: linear-gradient(to right, #FF512F, #DD2476); 
-   background-clip: text; 
-  -webkit-text-fill-color: transparent;
- -webkit-text-fill-color: transparent;
-  color: transparent; 
-  font-weight: bold;
-
+  color: #FF512F;
 }
