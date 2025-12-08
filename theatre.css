@@ -1,0 +1,29 @@
+.grand-bloc-degrade {
+    width: 80%; 
+    min-height: 250px; 
+    margin: 40px auto; 
+    
+  
+    background: linear-gradient(to bottom right, #3498db, #2980b9);
+
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+}
+
+.pres1 {
+    color: white; 
+    font-family: Dancing-Script;
+    text-align: center; 
+    font-size: 50px;
+
+}
+
+.pres1 p {
+    padding: 5px 0; 
+    margin: 0px 0;
+    line-height: 1.6;    
+    width: 50;
+    height: auto;
+}
+
