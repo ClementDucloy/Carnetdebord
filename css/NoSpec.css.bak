@@ -1,3 +1,6 @@
+body{
+	background: green;
+}
 .grand-bloc-degrade {
     width: 80%; 
     min-height: 200px; 
@@ -45,7 +48,7 @@
     min-height: 125px; 
     margin: 20px auto; 
   
-    background: linear-gradient(to bottom right, #863008, #ca1901);
+    background: linear-gradient(to bottom right, #001670, #ca1901);
 
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
