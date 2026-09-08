@@ -5,6 +5,7 @@
 
 
 
+
 .enctr {
     color: rgb(5, 22, 75);
     font-family: "Bitcount Prop Double Ink", system-ui;
@@ -56,12 +57,14 @@ body {
 a.logo {
   display: inline-block;
   outline: none;
+  padding: 10px 15px;
 }
 
 img.logo {
+  position: relative;
   width: 50px;
   height: auto;
-  top: 0px;
+  bottom: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease;
   vertical-align: middle;
@@ -75,6 +78,7 @@ img.logo:hover {
 a.logoo {
   display: inline-block;
   outline: none;
+  padding: 10px 15px;
 }
 
 img.logoo {
@@ -113,7 +117,7 @@ img.logoo:hover {
   transition: transform 0.3s ease;  
   display: block;
   width: 1563px;
-  margin: -4px auto 0; 
+  margin: 40px auto 0; 
   text-align: center;
   font-family: "Dancing Script";
   font-size: 45px;
@@ -123,6 +127,7 @@ img.logoo:hover {
   text-decoration: none;
   border-radius: 10px;
   padding: 10px;
+  padding-top: 10px;
   background: linear-gradient(90deg, #383838, #494949);
   overflow: hidden;
 }
@@ -131,21 +136,6 @@ img.logoo:hover {
    transform: scale(1.02); 	
 }
 
-.pres {
-  text-align: center;
-  font-family: "Dancing Script";
-  font-style: italic, bold;
-}
-
-.calais {
-  position: absolute;
-  text-align: center;
-  top: 250px;
-  left: 600px;
-  width: 500px;
-  height: auto;
-  border: 20px;
-}
 
 .backgroundI {
   position: absolute;
@@ -158,9 +148,133 @@ img.logoo:hover {
 }
 
 
- /*display: block;
- margin: 0px auto;
- text-align : center;
-  width: 100%;
-  height: auto; */
 
+@keyframes slideshow__fade {
+  0% {
+    opacity: 0;
+    z-index: 2; 
+  }
+  
+  1.6666666667% { 
+    opacity: 1; 
+  }
+  
+  16.6666666667% { 
+    opacity: 1; 
+  }
+  
+  18.3333333333% { 
+    opacity: 0; 
+  }
+  
+  18.4% { 
+    z-index: 1; 
+  }
+  
+  100% {
+    opacity: 0; 
+  }
+}
+
+.diaporama {
+  position: relative;
+  border-radius: 15px;
+  width: 800px;
+  height: 600px; 
+  overflow: hidden; 
+  margin: 0px auto;
+}
+
+.diaporama img:not(:first-child) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+  animation-duration: 30s; 
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: slideshow__fade;
+  animation-timing-function: ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.diaporama img:nth-child(1) {
+  animation-delay: 0s;
+  opacity: 1; 
+  z-index: 3; 
+}
+.diaporama img:nth-child(2) { 
+  animation-delay: 15s; 
+}
+.diaporama img:nth-child(3) { 
+  animation-delay: 15s; 
+}
+
+
+.indexfin {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  background: linear-gradient(80deg, #218496, #002d70);
+  z-index: -1;
+
+}
+
+
+.indexf {
+    background: #868686;
+    width: 2000px;
+    color: rgb(255, 0, 191);
+    height: 75px;
+    margin: 75px auto 0; 
+    text-align: center;
+    font-family: "Dancing Script";
+    margin-right: 10px;
+    font-size: 35px;
+
+
+}
+
+.indexf a {
+  padding: 10px 15px;
+  text-decoration: none; 
+  font-style: italic, bold;
+
+}
+
+.nom {
+  display: block;
+  font-family: 'Playwrite DE SAS', sans-serif;
+  font-size: 30px;
+  margin: 250px auto; 
+  background-image: linear-gradient(to right, #FF512F, #DD2476); 
+  -webkit-background-clip: text;
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+ -webkit-text-fill-color: transparent;
+  color: transparent; 
+  font-weight: bold;
+  padding-right: 25px;
+}
+
+.classe {
+  position: relative;
+  bottom: 320px;
+  left: 1300px;
+  font-size: 20px;
+  font-family: 'Playwrite DE SAS', sans-serif;
+  color: #FF512F;
+}
+
+
+.container {
+max-width: 1000px; 
+margin: auto;
+position: relative;	
+}
+
+.slides {
+	display: none;
+}

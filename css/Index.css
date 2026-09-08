@@ -267,3 +267,57 @@ img.logoo:hover {
   font-family: 'Playwrite DE SAS', sans-serif;
   color: #FF512F;
 }
+
+
+.container {
+max-width: 1000px; 
+margin: auto;
+position: relative;	
+}
+
+.slides {
+	display: none;
+	position: relative;
+	left: 245px;
+}
+
+
+.prev,
+.next {
+	cursor: pointer;
+	color: white; 
+	position: absolute;
+	top: 50%;
+	right: 77%;
+	transform: translate(0, -50%);
+	padding: 16px;
+	border-radius: 0 3px 3px 0;
+	background: rgba(0, 0, 0, .5);
+	transition: all .3s;
+}
+
+.next {
+	border-radius: 3x 0 0 3px;
+	right: 20%;
+}
+
+.prev:hover,
+.next:hover {
+	background: rgba(0, 0, 0, .8);
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	margin: 10px 2px 0 2px;
+	display: inline-block;
+	background: #ddd;
+	transition: all ;3s;
+}
+
+.active,
+.dot:hover {
+	background: #717171;
+}

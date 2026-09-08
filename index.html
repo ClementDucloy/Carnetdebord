@@ -43,12 +43,28 @@
 			<p class="classe"> au groupe Epid-Vauban</p>
 
 		</div>
-		<div class="diaporama"> 
-			<img src="img/cap1.png" alt="cap1" width="" height= "" />
-			<img src="img/cap2.png" alt="" width="" height= "" />
-			<img src="img/cap3.png" alt="" width="" height= "" />
-		</div>
+		
+		<div class="container"> 
+		  <div class="slides">
+		   <img src="img/cap1.jpg" style="width:500px"> 
+		  </div> 
+		  <div class="slides">
+		   <img src="img/cap2.jpg" style="width:500px"> 
+		   </div>
+		  <div class="slides">
+		   <img src="img/cap3.jpg" style="width:500px"> 
+		   </div> 
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
+		</div>
+		<br>
+		<div style="text-align:center">
+		 <span class="dot" onclick="currentSlide(1)"></span>
+		 <span class="dot" onclick="currentSlides(2)"></span>
+		 <span class="dot" onclick="currentSlides(3)"></span>
+		</div> 
 
 		<div>
 			<a href="https://www.epid-vauban.fr/formations/option-theatre/" class="pretext"> Découvrez Option Théâtre</a>
@@ -63,6 +79,8 @@
 			<a href="https://www.epid-vauban.fr/formations/option-theatre/" class="animtextI"> Option théâtre Epid/vauban</a>
 			<a href="legal.html" class="animtextI"> Condition d'utilisation</a>
 		</div>
+		
+		<script src="javascript/index.js"></script>
 
 	</body>
 </html>
