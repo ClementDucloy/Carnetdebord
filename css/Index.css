@@ -116,20 +116,14 @@ img.logoo:hover {
 .pretext{ 
   transition: transform 0.3s ease;  
   display: block;
-  width: 1563px;
-  margin: 40px auto 0; 
-  text-align: center;
-  font-family: "Dancing Script";
-  font-size: 45px;
-  font-style: italic;
-  font-weight: bold;
+  background: #325969;
+  background: linear-gradient(90deg, rgba(50, 89, 105, 1) 0%, rgba(25, 8, 74, 1) 50%, rgba(114, 73, 163, 1) 100%);
+  padding: 25px;
+  margin: 15px;
   color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  padding: 10px;
-  padding-top: 10px;
-  background: linear-gradient(90deg, #383838, #494949);
-  overflow: hidden;
+  text-align: center;
+  front-size: 15px;
+  
 }
 
 .pretext:hover {
