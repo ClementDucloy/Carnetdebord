@@ -1,69 +1,81 @@
-<!DOCTYPE HTML> 
+<!DOCTYPE HTML>
 <html lang="fr"> 
-	<meta charset="UTF-8">
-	<head>
-		<title> Carnet de bord : Clément Ducloy</title>
-		<link rel="stylesheet" href="../css/Index.css"/>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-		<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <title>Carnet de bord : Clément Ducloy</title>
+        <link rel="stylesheet" href="../css/Index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    </head>
 
-	</head>
+    <body class="bodi">
+        <div class="car"></div>
 
-	<body class="bodi">
-		<div class="car"></div>
+        <div class="menu"> 
+            <a href="index.html" class="logo">
+                 <img src="../img/icon.png" alt="Accueil" title="Clique pour retourner à l'accueil" class="logo">
+            </a>
+            
+            <a href="https://www.lebateaufeu.com/" class="logoo"> 
+                <img src="../img/logoBF.png" alt="site bateau feu" title="Bateau feu" class="logoo">
+            </a>
 
-		<div class="menu"> 
+            <a class="title" href="le_theatre_et_moi.html">Le Théâtre et moi</a>   
+            <a class="title" href="notre partenaire.html">Notre Partenaire</a>
+            <a class="title" href="spectacle.html">Les Spectacles</a>
+            <a class="title" href="Notre Spectacle.html">Nos Représentation</a>
+            <a class="title" href="legal.html">A propos de</a>
+        </div>
 
- 		<a href="../html/Index.html" class="logo">
- 			 <img src="../img/icon.png" alt="Accueil" title="Clique pour retourner à l'accueil" class="logo">
-		</a>
-		
-		<a href="https://www.lebateaufeu.com/" class="logoo"> 
-			<img src="../img/logoBF.png" alt="site bateau feu" title="Bateau feu" class="logo">
-		</a>
+        <div class="backgroundI"> 
 
-		<a class="title" href="le_theatre_et_moi.html">Le Théâtre et moi </a>	
-		<a class="title" href="notre partenaire.html">Notre Partenaire </a>
-		<a class="title" href="spectacle.html">Les Spectacles </a>
-		<a class="title" href="legal.html">A propos de </a>
-		</div>
-		
-		<div class="carpre"></div>
+            <div class="main-content">
+                <div class="nom-box">
+                    <h1 class="nom">Clément Ducloy</h1>
+                </div>
 
-		<div class="backgroundI"> 
+                <div class="container"> 
+                    <div class="slides">
+                        <img src="../img/cap1.jpg" alt="Photo 1"> 
+                    </div> 
+                    <div class="slides">
+                        <img src="../img/cap2.jpg" alt="Photo 2"> 
+                    </div>
+                    <div class="slides">
+                        <img src="../img/cap3.jpg" alt="Photo 3"> 
+                    </div> 
+                  
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-			<h1 class="nom"> Clément Ducloy</h1>
-			<p class="classe"> Classe de Seconde </p>
-			<p class="classe"> au groupe Epid-Vauban</p>
+                    <div class="dots-box">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div> 
+                </div>
 
-		</div>
-		<div class="diaporama"> 
-			<img src="../img/cap1.png" alt="cap1" width="" height= "" />
-			<img src="../img/cap2.png" alt="" width="" height= "" />
-			<img src="../img/cap3.png" alt="" width="" height= "" />
-		</div>
+                <div class="classe-box">
+                    <p class="classe">Classe de Seconde</p>
+                    <p class="classe">au groupe Epid-Vauban</p>
+                </div>
+            </div>
 
+            <div>
+                <a href="https://www.epid-vauban.fr/formations/option-theatre/" class="pretext">Découvrez Option Théâtre</a>
+            </div>
 
-		<div>
-			<a href="https://www.epid-vauban.fr/formations/option-theatre/" class="pretext"> Découvrez Option Théâtre</a>
-		</div>
+            <div class="indexf"> 
+                <a href="https://www.lebateaufeu.com/" class="animtextI">Bateau feu</a>
+                <a href="https://www.epid-vauban.fr" class="animtextI">Groupe Epid / Vauban</a>
+                <a href="https://www.epid-vauban.fr/formations/option-theatre/" class="animtextI">Option théâtre Epid/vauban</a>
+                <a href="legal.html" class="animtextI">Condition d'utilisation</a>
+            </div>
 
-		
-		
-		
-		<div class="indexf"> 
-			<a href="https://www.lebateaufeu.com/" class="animtextI"> Bateau feu</a>
-			<a href="https://www.epid-vauban.fr" class="animtextI"> Groupe Epid / Vauban</a>
-			<a href="https://www.epid-vauban.fr/formations/option-theatre/" class="animtextI"> Option théâtre Epid/vauban</a>
-			<a href="../html/legal.html" class="animtextI"> Condition d'utilisation</a>
-		</div>
+        </div> 
 
-
-	</body>
-
+        <script src="../javascript/index.js"></script>
+    </body>
 </html>
