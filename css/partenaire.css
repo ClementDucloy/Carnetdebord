@@ -1,3 +1,7 @@
+body {
+	background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
 .grand-bloc-degrade {
     width: 80%; 
     min-height: 250px; 

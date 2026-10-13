@@ -1,0 +1,37 @@
+body {
+	background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+.bloc {
+    width: 45%; 
+    min-height: 250px; 
+    margin: 40px auto; 
+  
+    background: #020024;
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    padding: 20px; 
+	
+	transition: transform 0.3s ease
+}
+
+.bloc:hover {
+	transform: scale(1.05);
+}
+
+.text {
+	color: white; 
+    font-family: Fortnite;
+    text-align: center; 
+    font-size: 50px;
+}
+
+.text p  {
+	padding: 5px 0; 
+    margin: 0px 0;
+    line-height: 1.6;    
+    width: 50;
+    height: auto;
+}
