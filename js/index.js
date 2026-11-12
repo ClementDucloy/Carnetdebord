@@ -1,4 +1,4 @@
-console.log("Loading Index");
+console.log("Loading Index...");
 
 let slideIndex = 1;
 showSlides(slideIndex);
