@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 console.log("Loading Index...");
+=======
+console.log("Loading Index");
+
+>>>>>>> 922bcf7 (fix index bug)
 
 let slideIndex = 1;
 showSlides(slideIndex);
