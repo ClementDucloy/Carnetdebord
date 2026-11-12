@@ -1,34 +1,5 @@
 console.log("Loading Index");
 
-const rickroll = document.getElementById("rickroll");
-const close = document.getElementById("byeclose");
-const open = document.getElementById("ssssh");
-const video = rickroll.querySelector('video'); 
-
-open.addEventListener('click', () => {
-    rickroll.showModal();
-    video.muted = false;
-    video.currentTime = 0; 
-
-    let playPromise = video.play();
-    if (playPromise !== undefined) {
-        playPromise.catch(error => {
-            if (error.name !== 'AbortError') {
-                console.error("Erreur lors de la lecture de la vidéo :", error);
-            }
-        });
-    }
-}); 
-
-close.addEventListener('click', () => {
-    if (!video.paused) {
-        video.pause();
-    }
-    video.muted = true; 
-    rickroll.close(); 
-});
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
