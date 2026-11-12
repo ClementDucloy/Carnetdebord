@@ -9,11 +9,21 @@ open.addEventListener('click', () => {
     rickroll.showModal();
     video.muted = false;
     video.currentTime = 0; 
-    video.play();
+
+    let playPromise = video.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(error => {
+            if (error.name !== 'AbortError') {
+                console.error("Erreur lors de la lecture de la vidéo :", error);
+            }
+        });
+    }
 }); 
 
 close.addEventListener('click', () => {
-    video.pause(); 
+    if (!video.paused) {
+        video.pause();
+    }
     video.muted = true; 
     rickroll.close(); 
 });
@@ -26,11 +36,7 @@ function showSlides(n) {
     let slides = document.getElementsByClassName('slides'); 
     let dots = document.getElementsByClassName('dot');
     
-    console.log(slides);
-    console.log(dots);
-    
     if (n > slides.length) { slideIndex = 1; }
-        
     if (n < 1) { slideIndex = slides.length; }
     
     for (let i = 0; i < slides.length; i++) { 
