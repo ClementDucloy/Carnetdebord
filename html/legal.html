@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de...</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../css/Index.css"/>
+
+    
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+
+    <style>
+        body.bodi {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            color: #333;
+        }
+
+
+        .about-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+            padding: 40px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+
+        .about-container h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 50px;
+            color: #863008;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .about-container h2 {
+            font-size: 14px;
+            color: #777;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .about-container p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 25px;
+            text-align: justify;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to bottom right, #863008, #ca1901);
+            color: white;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(202, 25, 1, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 15px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(202, 25, 1, 0.4);
+        }
+
+        #interactive-msg {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #888;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body class="bodi">
+
+    <div class="car"></div>
+    <div class="menu"> 
+        <a href="index.html" class="logo">
+            <img src="../img/icon.png" alt="Accueil" title="Clique pour retourner à l'accueil" class="logo">
+        </a>
+        
+        <a href="https://www.lebateaufeu.com/" class="logoo" target="_blank" rel="noopener noreferrer"> 
+            <img src="../img/logoBF.png" alt="Site Bateau Feu" title="Bateau Feu" class="logoo">
+        </a>
+
+        <a class="title" href="le_theatre_et_moi.html">Le Théâtre et moi</a>   
+        <a class="title" href="notre partenaire.html">Notre Partenaire</a>
+        <a class="title" href="spectacle.html">Les Spectacles</a>
+        <a class="title" href="Notre Spectacle.html">Nos Représentations</a>
+        <a class="title" href="NotreProjet.html">Notre Projet</a>
+        <a class="title" href="legal.html">À propos de</a>
+    </div>
+
+
+    <div class="about-container">
+        <h1>Conditions d'utilisation</h1>
+        <h2>© 2026 - Clément Ducloy • Tous droits réservés</h2>
+
+        <p>
+            Tous les droits du site appartiennent à <strong>Clément Ducloy</strong>. Utilisation de l'identité graphique et du nom du lycée <strong>EPID / VAUBAN</strong> ainsi que du théâtre <strong>« Le Bateau Feu »</strong> dans le cadre de ce projet pédagogique.
+        </p>
+        
+        <p>
+            Ce site est réalisé dans un cadre purement scolaire. Aucune information personnelle concernant l'utilisateur n'est collectée ou utilisée à des fins commerciales ou publicitaires.
+        </p>
+
+        <a href="../img/site.zip" class="download-btn">📥 Télécharger les fichiers source du site</a>
+
+        <div id="interactive-msg"></div>
+    </div>
+
+    <script>
+        const msgBox = document.getElementById('interactive-msg');
+        const currentHour = new Date().getHours();
+        let greeting = "Merci de votre visite sur notre site web !";
+
+        if (currentHour >= 18 || currentHour < 5) {
+            greeting = "Bonne soirée et bonne visite sur le site ! 🌙";
+        } else {
+            greeting = "Belle journée et bonne visite sur le site ! ☀️";
+        }
+
+        msgBox.textContent = greeting;
+    </script>
+
+</body>
+</html>

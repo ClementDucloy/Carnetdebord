@@ -1,0 +1,77 @@
+body {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+
+@font-face {
+  font-family: 'Fortnite'; 
+  src: url('../img/burbank-big-condensed-black_ufonts.com.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bloc {
+    width: 45%; 
+    min-height: 250px; 
+    margin: 40px auto; 
+  
+    background: #020024;
+    background: linear-gradient(90deg,rgba(105, 0, 0, 1) 0%, rgba(255, 166, 0, 1) 100%);
+
+    border-radius: 15px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+
+    padding: 20px; 
+    
+    transition: transform 0.3s ease;
+}
+
+.bloc:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    color: white; 
+    font-family: 'Fortnite', sans-serif;
+    text-align: center; 
+    font-size: 50px;
+}
+
+.text p {
+    padding: 5px 0; 
+    margin: 0px 0;
+    line-height: 1.6;    
+    width: 50%; 
+    height: auto;
+}
+
+dialog {
+    border: none;
+    color: white;
+    background: linear-gradient(90deg,rgba(105, 0, 0, 1) 0%, rgba(255, 166, 0, 1) 100%);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.titre-har {
+    font-family: 'Fortnite', sans-serif;
+}
+
+.hardclose {
+    color: red;
+    border: none;      
+    outline: none;      
+    background: none;   
+    cursor: pointer;
+    font-size: 25px;
+}
+
